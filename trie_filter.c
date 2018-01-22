@@ -364,7 +364,7 @@ PHP_FUNCTION(trie_filter_store)
 
     i = 0;
 
-    while (*p && *p != '\n' && *p != '\r') {
+    while (*p && *p != "\n"  && *p != "\r") {
 
         alpha_key[i++] = (AlphaChar)*p;
 
